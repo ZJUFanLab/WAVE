@@ -8,7 +8,7 @@ WAVE consists of three main components:
   Encodes baseline (control) gene expression profiles into a latent space using a variational autoencoder.
 
 * **DrugNN**
-  Maps drug molecular fingerprints (e.g., ECFP4) into a low-dimensional embedding vector.
+  Maps drug molecular fingerprints (e.g., Morgan) into a low-dimensional embedding vector.
 
 * **GeneDrugFusion**
   Concatenates gene latent vectors and drug embeddings, then predicts the expression **delta** (i.e., perturbation effect), which is added to the VAE-reconstructed baseline to generate the final perturbed profile.
@@ -37,7 +37,6 @@ WAVE expects an `.h5ad` file as input (AnnData format) with the following:
 * `.X`: baseline (control) gene expression matrix (cells × genes)
 * `.layers['ctrl']`: control expression (optional if `.X` used)
 * `.layers['pert']`: drug-treated expression (ground truth)
-* `.obsm['drug_fp']`: drug molecular fingerprints (e.g., ECFP vectors, shape: cells × 2048)
 
 ---
 
