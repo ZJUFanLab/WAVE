@@ -1,0 +1,18 @@
+python train.py \
+  --drug_file "/path/to/pert_id_smiles.txt" \
+  --drug_id_file "/path/to/pert_id.txt" \
+  --gene_file "/path/to/gene_feature_rename.csv" \
+  --data_file "train_val_test.csv" \
+  --fp_type neural \
+  --label_type real \
+  --loss_type list_wise_rankcosine \
+  --batch_size 64 \
+  --max_epoch 100 \
+  --lr 0.003 \
+  --fold 0 \
+  --model_name ciger \
+  --warm_start False \
+  --inference False \
+  --seed 1 \
+  --pert_id train_val_test_pert_id.csv \
+  --outdir .

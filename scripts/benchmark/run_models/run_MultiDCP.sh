@@ -1,0 +1,12 @@
+python multidcp_ae.py \
+  --drug_file "all_smiles.csv" \
+  --gene_file "gene_vector.csv" \
+  --train_file "train.csv" \
+  --dev_file "val.csv" \
+  --test_file "test.csv" \
+  --dropout 0.3 \
+  --batch_size 64 \
+  --max_epoch 200 \
+  --cell_ge_file "/path/to/adjusted_ccle_tcga_ad_tpm_log2.csv" \
+  --unfreeze_steps 1,2,3,4 \
+  --outdir .

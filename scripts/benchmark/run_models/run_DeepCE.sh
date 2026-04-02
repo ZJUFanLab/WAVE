@@ -1,0 +1,11 @@
+python main_deepce.py \
+  --drug_file /path/to/pert_id_smiles.txt \
+  --gene_file /path/to/gene_vector.csv \
+  --train_file train.csv \
+  --dev_file val.csv \
+  --test_file test.csv \
+  --dropout 0.1 \
+  --batch_size 16 \
+  --max_epoch 30 \
+  --outdir . \
+  --cell_id_file cell_id.csv
