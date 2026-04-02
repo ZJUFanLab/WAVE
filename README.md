@@ -1,3 +1,5 @@
+![图片描述](./WAVE.png)
+
 ##  Model Architecture
 
 WAVE consists of three main components:
