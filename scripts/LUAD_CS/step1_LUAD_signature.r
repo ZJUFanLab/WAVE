@@ -96,7 +96,7 @@ p <- ggvolcano(deg_results, x = "log2FoldChange", y = "padj",
 p
 
 
-ggsave(p, file="D:/Work/WAVE_v3/13.drug_connectivity/lung_cancer_vocalno.pdf")
+ggsave(p, file="/path/to/lung_cancer_volcalno.pdf")
 
 
 logfc_threshold <- 1
